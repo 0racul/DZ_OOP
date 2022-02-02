@@ -65,7 +65,7 @@ class WallServiceTest {
 
         val updated = WallService.updatePost(infoForUpdate)
 
-        assertTrue { updated }
+        assertFalse { updated }
 
     }
 
