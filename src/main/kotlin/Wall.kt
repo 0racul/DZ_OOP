@@ -27,6 +27,7 @@ object WallService {
                 posts[posts.indexOf(post)] = postUpdate
 
                 updated = true
+                break
             }
             else updated = false
 
