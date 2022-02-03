@@ -1,0 +1,47 @@
+package attach_types
+
+import Attachment
+import java.util.*
+
+class VideoAttach(
+    id: Long,
+    owner_id: Long,
+    date: Calendar,
+    title: String,
+    description: String,
+    duration: Int,
+    image: String,
+    first_frame: String,
+    adding_date: Calendar,
+    views: Int,
+    local_views: Int,
+    comments: Int,
+    player: String,
+    platform: String,
+    can_add: Boolean,
+    is_private: Boolean,
+    access_key: String,
+    processing: Boolean,
+    is_favorite: Boolean,
+    can_comment: Boolean,
+    can_edit: Boolean,
+    can_like: Boolean,
+    can_repost: Boolean,
+    can_subscribe: Boolean,
+    can_add_to_faves: Boolean,
+    can_attach_link: Boolean,
+    width: Int,
+    height: Int,
+    user_id: Long,
+    converting: Boolean,
+    added: Boolean,
+    repeat: Int = 0,
+    type: String,
+    balance: Int,
+    live_status: String,
+    live: Int = 1,
+    upcoming: Int = 1,
+    spectators: Int,
+    likes: Int,
+    reposts: Int): Attachment(id, owner_id, date) {
+}
