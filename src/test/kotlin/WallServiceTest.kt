@@ -15,10 +15,14 @@ val post = Post(
     reply_owner_id = 0,
     reply_post_id = 0,
     friends_only = false,
-    likes = 0,
-    reposts = 0,
-    views = 0,
+    commentsSection = null,
+    copyright = "",
+    likes = null,
+    reposts = null,
+    views = null,
     post_type ="sdf",
+    post_source = null,
+    attachments = null,
     signer_id = 0,
     can_pin = true,
     can_delete = true,
@@ -26,8 +30,7 @@ val post = Post(
     is_pinned = 1,
     marked_as_ads = true,
     is_favorite = true,
-    postponed_id = 0
-)
+    postponed_id = 0)
 
 
 class WallServiceTest {
