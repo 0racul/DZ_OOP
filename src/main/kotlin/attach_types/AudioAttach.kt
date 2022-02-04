@@ -7,7 +7,8 @@ class AudioAttach(
     id: Long,
     owner_id: Long,
     date: Calendar,
-    artist: String ,
+    attach_type: String = "audio",
+    artist: String,
     title: String,
     duration: Int,
     url: String,
@@ -15,5 +16,5 @@ class AudioAttach(
     album_id: Long,
     genre_id: Long,
     no_search: Int = 1,
-    is_hq: Int = 1): Attachment(id, owner_id, date) {
+    is_hq: Int = 1): Attachment(id, owner_id, date, attach_type) {
 }

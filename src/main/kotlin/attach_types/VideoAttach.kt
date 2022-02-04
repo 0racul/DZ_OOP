@@ -7,6 +7,7 @@ class VideoAttach(
     id: Long,
     owner_id: Long,
     date: Calendar,
+    attach_type: String = "video",
     title: String,
     description: String,
     duration: Int,
@@ -43,5 +44,5 @@ class VideoAttach(
     upcoming: Int = 1,
     spectators: Int,
     likes: Int,
-    reposts: Int): Attachment(id, owner_id, date) {
+    reposts: Int): Attachment(id, owner_id, date, attach_type) {
 }
